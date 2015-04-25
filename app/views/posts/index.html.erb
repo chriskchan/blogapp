@@ -15,7 +15,7 @@
     <% @posts.each do |whatever| %>
       <tr>
         <td><%= whatever.id %></td>
-        <td><%= whatever.title %></td>
+        <td><a href="/posts/<%= whatever.id%>"><%= whatever.title %></a></td>
         <td><%= whatever.created_at %></td>
     </tr>
     <% end %>
