@@ -2,6 +2,31 @@
 <h3>This where I will create new posts</h3>
 
 <%= form_for(@post, :html => { :multipart => true } ) do |f| %> 
-  <%= f.label :title %>
-  <%= f.text_field :title, :required => true %>
+
+  <% if @post.errors.any? %>
+    <div class="error_messages">
+      <ul>
+        <% @post.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %> 
+      </ul>
+    </div> 
+  <% end %>
+
+  <div>
+    <%= f.label :title %>
+    <%= f.text_field :title, :required => true %>
+  </div>
+
+  <div>
+    <div>
+    <%= f.label "Text body for post"%>
+    </div>
+    <%= f.text_area :body, :required => true, size: "100x25"%>
+  </div>
+
+  <div>
+    <%= f.submit "Submit Thy Post"%>
+  </div>
+  
 <% end %>
