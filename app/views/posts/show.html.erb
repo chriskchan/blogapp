@@ -1,43 +1,23 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html>
-	<head>
-		<link href='http://fonts.googleapis.com/css?family=Pontano+Sans' rel='stylesheet' type='text/css'>
-		<link href='http://fonts.googleapis.com/css?family=Droid+Serif' rel='stylesheet' type='text/css'>
-		<link rel="stylesheet" type="text/css" href="application.css">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-	</head>
-	<body id="blog-post">
-		<header >
-			<a href="index.html">
-				<h1 id="logo">PS</h1>
-			</a>
-			<div id="center">
-				<p></p>
-				<h4>LIFE LEARNING</h4>
-			</div>
-			<div id="right-nav">
-        <a href=<%= new_post_url %>>
-					<h3>Write a Post</h3>
-				</a>
-			</div>
-
-		</header>
-		<div class="header-clearing">
-			<div id='header-image'>
-			</div>
-			<div class="body-container">
-				<h1><%= @post.title %></h1>
-					<p>
-						By: Me
-					</p>
-				</div>
-				<h3>
-                  <%= @post.body %>
-                </h3>
-			</div>
-			<div id="next-post">
-				<div class="body-container">
-					
-				<footer></footer>
-	</body>
+<head>
+<title>Chris' Blog</title>
+<link rel="stylesheet" type="text/css" href="blogstyle.css">
+</head>
+<body>
+<nav>
+<h1 id="nav_title"> Christopher's Blog </h1>
+<span id="login"> Sign In/Sign Up </span>
+<span id="write"> <a class="links" href="/posts/new/"> Write a Post </a> </span>
+</nav>
+<div id="wrapper">
+<div id="featured">
+<h1 id="featured_article_title"> <%= @post.title%> </h1>
+</div>
+<div id="authorsection">
+<span id="author"> By: Christopher Chan </span>
+</div>
+<p id="featured_article_text"> <%= @post.body %></p>
+</div>
+</body>
 </html>

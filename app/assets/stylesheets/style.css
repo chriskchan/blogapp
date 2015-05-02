@@ -1,0 +1,128 @@
+body {
+margin: 0px;
+margin-bottom: 50000px;
+}
+
+nav {
+background-color: rgba(250,250,250,0.9);
+position: fixed;
+top: 0;
+left: 0;
+right: 0;
+border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+
+span {
+font-family: 'Pontano Sans', sans-serif;
+}
+
+#nav_title {
+display: inline-block;
+margin-left: 35px;
+}
+
+#login {
+display: inline-block;
+float: right;
+margin: 12px 35px 0 12px;
+border: 1px solid black;
+padding: 8px;
+border-radius: 990em; <!-- What is this? -->
+}
+
+#write { <!-- new for singles -->
+display: inline-block;
+float: right;
+margin: 12px 0;
+border: 1px solid black;
+padding: 8px;
+border-radius: 990em; <!-- What is this? -->
+}
+
+#wrapper {
+max-width: 650px;
+margin: 0 auto;
+}
+
+#featured_title_box {
+padding: 90px 250px 25px; <!-- Shouldn't this be half of the max-wi -->
+}
+
+.section_title {
+border: 1px solid black;
+padding: 3px 50px;
+margin: 0 auto;
+font-size: .8em;
+}
+
+#featured_article_title {
+font-family: 'Pontano Sans', sans-serif;
+padding-top: 75px; <!-- SINGLE CHANGE -->
+}
+
+#featured_article_image {
+width: 650px;
+}
+
+#featured_profile_image {
+max-width: 100px;
+max-height: 100px;
+border-radius: 50%;
+display: inline-block;
+}
+
+#author {
+display: inline-block;
+vertical-align: top;
+<!-- margin-left: 15px; -->
+padding-top: 20px;
+font-weight: bold;
+}
+
+#featured_article_text {
+font-size: 1.3em;
+font-family: 'Pontano Sans', sans-serif;
+}
+
+.sports_img {
+max-height: 50px;
+max-width: 50px;
+display: inline-block;
+border-radius: 10%;
+}
+
+.article_footer {
+display: block;
+}
+
+.footer_details {
+display: inline-block;
+vertical-align: top;
+padding-top: 10px;
+margin-left: 10px;
+}
+
+#most_recent_box {
+padding: 45px 250px 25px;
+}
+
+.post_description {
+max-width: 500px;
+display: inline-block;
+margin: 0;
+vertical-align: top;
+font-size: 1.2em;
+padding-bottom: 10px;
+}
+
+.post_images {
+margin-left: 10px;
+}
+
+.links {
+text-decoration: none;
+}
+
+a:visited {
+color: black;
+}

@@ -1,32 +1,21 @@
-<h1>NEW Post page!</h1>
-<h3>This where I will create new posts</h3>
+<h1> Post a new blog post here! </h1>
 
-<%= form_for(@post, :html => { :multipart => true } ) do |f| %> 
+<%= form_for(@post, :html => { :multipart => true } ) do |f| %>
 
-  <% if @post.errors.any? %>
-    <div class="error_messages">
-      <ul>
-        <% @post.errors.full_messages.each do |message| %>
-          <li><%= message %></li>
-        <% end %> 
-      </ul>
-    </div> 
-  <% end %>
+<div>
+<%= f.label :title %>
+<%= f.text_field :title, :required => true %>
+</div>
 
-  <div>
-    <%= f.label :title %>
-    <%= f.text_field :title, :required => true %>
-  </div>
+<div>
+<div>
+<%= f.label "Body for Posts"%>
+</div>
+<%= f.text_field :body, :required => true, size: "100x25" %>
+</div>
 
-  <div>
-    <div>
-    <%= f.label "Text body for post"%>
-    </div>
-    <%= f.text_area :body, :required => true, size: "100x25"%>
-  </div>
+<div>
+<%= f.submit "CLICK HERE TO SUBMIT"%>
+</div>
 
-  <div>
-    <%= f.submit "Submit Thy Post"%>
-  </div>
-  
 <% end %>

@@ -1,9 +1,8 @@
 Rails.application.routes.draw do
-  devise_for :users
+devise_for :users
 
-  root 'welcome#testing'
-  match '/whatever' => 'welcome#testing', via: [:get]
-  
-  resources :posts, only: [:index, :show, :new, :create]
+root 'welcome#index'
+match '/newpage' => 'welcome#newpage', via: [:get]
+resources :posts, only: [:index, :show, :new, :create]
 
 end
