@@ -9,6 +9,10 @@ class PostsController < ApplicationController
     @post = Post.find_by_id(params[:id])
     render :show
   end
+  
+  def new
+    render :new
+  end
 
  
 end
